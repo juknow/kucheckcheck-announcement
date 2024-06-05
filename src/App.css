@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.header-frame1 {
+  margin: 0 auto;
+  width: 129px;
+  height: 19px;
+
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  align-items: center;
+  border: 1px solid #c3201f;
+  border-radius: 4px;
+}
+.main {
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 144px;
+  background-color: #c3201f;
+  color: #ffffff;
+}
+
+.footer-text {
+  text-align: center;
+}
