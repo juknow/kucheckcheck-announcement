@@ -1,14 +1,11 @@
 import "./App.css";
+import Header from "./component/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="header"></header>
-      <div className="header-frame1">
-        <img />
-        <input />
-      </div>
-      <div className="header-frame2"></div>
+      <Header />
+
       <main className="main"></main>
       <footer className="footer">
         <div className="footer-text">

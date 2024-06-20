@@ -5,24 +5,24 @@
 .header {
   height: 80px;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 48px;
-}
-.header-frame1 {
-  margin: 0 auto;
-  width: 129px;
-  height: 19px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
   align-items: center;
-  border: 1px solid #c3201f;
-  border-radius: 4px;
+  gap: 32px;
 }
+.header-search-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.header-search {
+  border: 3px solid #c3201f;
+  border-radius: 4px;
+  width: 546px;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 16px;
+}
+
 .main {
 }
 .footer {
@@ -36,4 +36,12 @@
 
 .footer-text {
   text-align: center;
+}
+.announce {
+  display: flex;
+  flex-direction: column;
+}
+.announce-header {
+  width: 768px;
+  height: 33px;
 }
