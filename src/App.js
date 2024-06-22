@@ -1,21 +1,15 @@
 import "./App.css";
 import Header from "./component/Header";
+import Footer from "./component/Footer";
+import Navigator from "./component/Navigator";
 
 function App() {
   return (
     <div className="App">
       <Header />
-
+      <Navigator />
       <main className="main"></main>
-      <footer className="footer">
-        <div className="footer-text">
-          Made with ♥ by KUCC <br />
-          <br />
-          서울특별시 성북구 고려대로 105 고려대학교 학생회관 314호
-          <br />
-          anamkucc314@gmail.com
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
