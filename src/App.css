@@ -8,25 +8,30 @@
   height: 80px;
   display: flex;
   margin-bottom: 48px;
-  gap: 32px;
+  gap: 160px;
   justify-content: center;
   align-items: center;
 }
 .header-search-container {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 36px;
 }
 .header-search {
   display: flex;
-  border: 3px solid #c3201f;
+  border: 1px solid #c3201f;
   border-radius: 4px;
   width: 546px;
   height: 40px;
   font-size: 16px;
   padding-left: 16px;
 }
+.header-search-button {
+  all: unset;
+  margin-right: 16px;
+}
 .header-search-input {
+  all: unset;
   width: 520px;
   font-size: 16px;
 }
@@ -42,6 +47,10 @@
   font-size: 14px;
 }
 .main {
+  display: flex;
+  margin-bottom: 64px;
+  align-items: start;
+  gap: 32px;
 }
 .navigator-container {
   width: 256px;
@@ -84,13 +93,14 @@
   align-items: start;
   width: 832px;
   padding: 16px 32px 16px 32px;
+  gap: 16px;
 }
 .announce-register-button {
   all: unset;
   width: 80px;
   height: 33px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 4px;
   background-color: #c3201f;
   color: #ffffff;
@@ -108,22 +118,25 @@
 .announce-container-header {
   display: flex;
   justify-content: space-between;
-  width: 768px;
+  width: 736px;
   height: 31px;
   background-color: #c3201f;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   align-items: center;
+  padding: 0 16px;
 }
 .announcecomponent-container {
   display: flex;
   justify-content: space-between;
-  width: 768px;
+  align-items: center;
+  width: 736px;
   height: 31px;
   border-bottom: 1px solid #c3201f;
   font-size: 16px;
   font-weight: 500;
+  padding: 0 16px;
 }
 .announce-index {
   width: 768px;
@@ -134,4 +147,25 @@
   align-items: center;
   gap: 20px;
   font-weight: bold;
+}
+.announce-search {
+  all: unset;
+  border: 1px solid #c3201f;
+  border-radius: 4px;
+  padding-left: 12px;
+  width: 756px;
+  height: 26px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.announce-search-button {
+  all: unset;
+  margin-right: 16px;
+}
+.announce-search-input {
+  all: unset;
+  width: 700px;
+  font-size: 16px;
 }
