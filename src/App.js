@@ -1,20 +1,27 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import Navigator from "./component/Navigator";
 import Announce from "./component/Announce";
+import AnnounceRegister from "./component/AnnounceRegister";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="main">
-        <Navigator />
-        <Announce />
+    <Router>
+      <div className="App">
+        <Header />
+        <div className="main">
+          <Navigator />
+          <Routes>
+            <Route path="/" element={<Announce />} />
+            <Route path="/announce" element={<Announce />} />
+            <Route path="/register" element={<AnnounceRegister />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

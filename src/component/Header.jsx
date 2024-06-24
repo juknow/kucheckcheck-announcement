@@ -27,11 +27,13 @@ export default function Header() {
         </div>
       </div>
       <div className="header-user-container">
-        <div className="header-user-text">환영합니다, <strong>김현채</strong> 님!</div>
+        <div className="header-user-text">
+          환영합니다, <strong>김현채</strong> 님!
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24px"
-          height="24px"
+          width="18px"
+          height="18px"
           viewBox="0 0 24 24"
         >
           <g

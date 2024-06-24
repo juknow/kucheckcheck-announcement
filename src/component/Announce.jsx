@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AnnounceComponent from "./AnnounceComponent";
 import AnnounceIndex from "./AnnounceIndex";
 
@@ -6,7 +7,9 @@ export default function Announce() {
     <div className="announce">
       <div className="announce-header">
         <div className="announce-header-name">공지사항.</div>
-        <button className="announce-register-button">새 글 등록</button>
+        <Link to="/register" className="announce-register-button">
+          새 글 등록
+        </Link>
       </div>
       <div className="announce-search">
         <input
