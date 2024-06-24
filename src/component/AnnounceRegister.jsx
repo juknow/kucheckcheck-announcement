@@ -18,16 +18,22 @@ export default function AnnounceRegister() {
   return (
     <div className="announceregister">
       <div style={{ marginBottom: "32px" }} className="announce-header">
-        <div className="announceregister-header-name">공지사항 등록.</div>
+        <div className="announceregister-header-name">
+          공지사항 등록<span class="red-dot">.</span>
+        </div>
       </div>
-      <div className="announceregister-name">제목.</div>
+      <div className="announceregister-name">
+        제목<span class="red-dot">.</span>
+      </div>
       <input
         className="announceregister-name-input"
         placeholder="제목을 입력해주세요"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <div className="announceregister-name">내용.</div>
+      <div className="announceregister-name">
+        내용<span class="red-dot">.</span>
+      </div>
       <textarea
         className="announceregister-content-input"
         placeholder="내용을 입력해주세요"

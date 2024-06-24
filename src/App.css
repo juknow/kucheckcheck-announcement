@@ -13,6 +13,9 @@
   justify-content: center;
   align-items: center;
 }
+.red-dot {
+  color: #c3201f;
+}
 .header-search-container {
   display: flex;
   align-items: center;
@@ -167,6 +170,7 @@
 .announce-search-button {
   all: unset;
   margin-right: 16px;
+  cursor: pointer;
 }
 .announce-search-input {
   all: unset;
@@ -223,4 +227,5 @@
   background-color: #c3201f;
   color: #ffffff;
   text-align: center;
+  cursor: pointer;
 }

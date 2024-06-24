@@ -9,10 +9,14 @@ export default function Announce() {
   return (
     <div className="announce">
       <div className="announce-header">
-        <div className="announce-header-name">공지사항.</div>
-        <Link to="/register" className="announce-register-button">
-          새 글 등록
-        </Link>
+        <div className="announce-header-name">
+          공지사항<span class="red-dot">.</span>
+        </div>
+        <button className="announce-register-button">
+          <Link to="/register" style={{ color: "white", cursor: "pointer" }}>
+            새 글 등록
+          </Link>
+        </button>
       </div>
       <div className="announce-search">
         <input
