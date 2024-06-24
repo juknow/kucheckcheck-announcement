@@ -1,8 +1,11 @@
+import useStore from "../store";
 import { Link } from "react-router-dom";
 import AnnounceComponent from "./AnnounceComponent";
 import AnnounceIndex from "./AnnounceIndex";
 
 export default function Announce() {
+  const announcements = useStore((state) => state.announcements);
+
   return (
     <div className="announce">
       <div className="announce-header">
@@ -39,8 +42,13 @@ export default function Announce() {
           <div>제목</div>
           <div>날짜</div>
         </div>
-        <AnnounceComponent />
-        <AnnounceComponent />
+        {announcements.map((announcement, index) => (
+          <AnnounceComponent
+            key={index}
+            title={announcement.title}
+            date={announcement.date}
+          />
+        ))}
       </div>
       <AnnounceIndex />
     </div>

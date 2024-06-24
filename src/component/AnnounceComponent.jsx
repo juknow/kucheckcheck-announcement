@@ -1,8 +1,15 @@
-export default function AnnounceComponent() {
+export default function AnnounceComponent({ title, date }) {
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+    return `${year}.${month}.${day}`;
+  }
   return (
     <div className="announcecomponent-container">
-      <div style={{ fontWeight: 600 }}>대출 일시 중단 안내</div>
-      <div>2024.04.01</div>
+      <div style={{ fontWeight: 600 }}>{title}</div>
+      <div>{formatDate(date)}</div>
     </div>
   );
 }
