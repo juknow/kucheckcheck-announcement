@@ -1,4 +1,4 @@
-export default function AnnounceComponent({ title, date }) {
+export default function AnnounceComponent({ title, date, onClick }) {
   function formatDate(dateString) {
     const date = new Date(dateString);
     const year = date.getFullYear();
@@ -7,7 +7,7 @@ export default function AnnounceComponent({ title, date }) {
     return `${year}.${month}.${day}`;
   }
   return (
-    <div className="announcecomponent-container">
+    <div className="announcecomponent-container" onClick={onClick}>
       <div style={{ fontWeight: 600 }}>{title}</div>
       <div>{formatDate(date)}</div>
     </div>

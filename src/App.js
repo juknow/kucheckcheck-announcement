@@ -5,6 +5,7 @@ import Footer from "./component/Footer";
 import Navigator from "./component/Navigator";
 import Announce from "./component/Announce";
 import AnnounceRegister from "./component/AnnounceRegister";
+import AnnounceDetail from "./component/AnnounceDetail";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Announce />} />
             <Route path="/announce" element={<Announce />} />
             <Route path="/register" element={<AnnounceRegister />} />
+            <Route path="/detail/:id" element={<AnnounceDetail />} />
           </Routes>
         </div>
         <Footer />

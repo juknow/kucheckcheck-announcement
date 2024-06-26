@@ -1,10 +1,15 @@
 import useStore from "../store";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AnnounceComponent from "./AnnounceComponent";
 import AnnounceIndex from "./AnnounceIndex";
 
 export default function Announce() {
   const announcements = useStore((state) => state.announcements);
+  const navigate = useNavigate();
+
+  const handleDetailClick = (id) => {
+    navigate(`/detail/${id}`);
+  };
 
   return (
     <div className="announce">
@@ -51,6 +56,7 @@ export default function Announce() {
             key={index}
             title={announcement.title}
             date={announcement.date}
+            onClick={() => handleDetailClick(index)}
           />
         ))}
       </div>
