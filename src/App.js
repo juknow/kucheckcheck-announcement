@@ -18,6 +18,7 @@ function App() {
             <Route path="/" element={<Announce />} />
             <Route path="/announce" element={<Announce />} />
             <Route path="/register" element={<AnnounceRegister />} />
+            <Route path="/register/:id" element={<AnnounceRegister />} />
             <Route path="/detail/:id" element={<AnnounceDetail />} />
           </Routes>
         </div>
