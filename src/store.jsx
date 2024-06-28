@@ -12,6 +12,10 @@ const useStore = create((set) => ({
         index === id ? updatedAnnouncement : announcement
       ),
     })),
+  deleteAnnouncement: (id) =>
+    set((state) => ({
+      announcements: state.announcements.filter((_, index) => index !== id),
+    })),
 }));
 
 export default useStore;
